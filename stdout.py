@@ -15,7 +15,6 @@ def example_function(parameter):
 def console_output(parameter):
     # record the pointer to the original terminal, VERY IMPORTANT!!!
     stdout_terminal = sys.stdout
-    stdout_capture = ""
     try:
         # change the stdout/err to point to the io.StringIO() object
         sys.stdout = sys.stderr = io.StringIO()
